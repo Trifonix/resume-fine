@@ -5,6 +5,19 @@ body {
 	font-size: 18px;
 	font-weight: normal;
 	letter-spacing: 2px;
+	color: #193875;
+	background: #d8cccc;
+}
+
+.container {
+	margin: auto;
+	max-width: 800px;
+}
+
+#avatar {
+	height: 200px;
+	border-radius: 20px;
+	box-shadow: 4px 4px 14px 1px rgba(0, 0, 0, 0.25);
 }
 
 .html p {
@@ -16,6 +29,18 @@ body {
 }
 
 .table {
-	width: 400px;
+	min-width: 250px;
 	text-align: center;
+	color: #D2691E;
+}
+
+.card {
+	background: #eee;
+	padding: 10px 20px;
+	margin-bottom: 15px;
+	border-radius: 10px;
+}
+
+.bio {
+	background-color: cornsilk;
 }
