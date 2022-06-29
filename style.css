@@ -20,6 +20,18 @@ body {
 	box-shadow: 4px 4px 14px 1px rgba(0, 0, 0, 0.25);
 }
 
+.header {
+	border: 1px solid black;
+	display: flex;
+}
+
+.box {
+	border: 1px solid grey;
+	display: block;
+	box-sizing: border-box;
+}
+
+
 .html p {
 	font-size: 16px;
 }
@@ -28,10 +40,40 @@ body {
 	font-size: 14px;
 }
 
-.table {
+.unittable .table {
 	min-width: 250px;
 	text-align: center;
 	color: #D2691E;
+}
+
+.exp h2, .unittable th {
+	text-align: center;
+	background: #FAF0E6;
+	border-radius: 20px;
+	width: 300px;
+}
+
+.table {
+	width: 60%;
+}
+
+.table th, .table td {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.table tr {
+	padding: 80px;
+}
+
+.table td {
+	background: #F5FFFA;
+	border-radius: 20px;
+}
+
+.table td:nth-child(2), .table td:nth-child(3) {
+	background: #F0FFFF;
 }
 
 .card {
@@ -43,4 +85,83 @@ body {
 
 .bio {
 	background-color: cornsilk;
+}
+
+.social {
+	padding-bottom: 40px;
+}
+
+.social a {
+	background: #B0C4DE;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+a {
+	color: #444;
+	transition: all .5s;
+}
+
+a:hover {
+	background: #eee;
+	color: orange;
+	font-size: 2rem;
+}
+
+a:visited {
+	color: darkred;
+}
+
+a:active {
+	color: blue;
+}
+
+.btn {
+	background: #242;
+	color: #fff;
+	padding: 15px 20px;
+	border-radius: 10px;
+}
+
+.btn:hover {
+	opacity: .6;
+	color: lime;
+}
+
+.form h4 {
+	text-align: center;
+}
+
+.form-row {
+	margin-bottom: 10px;
+	display: flex;
+}
+
+.form-row .form-group {
+	margin-right: 20px;
+	width: 50%;
+}
+
+.form-row .form-group:last-child {
+	margin-right: 0;
+}
+
+.form-group label {
+	display: block;
+	font-size: 14px;
+	color: red;
+}
+
+.form-group input,
+.form-group textarea {
+	width: 100%;
+	box-sizing: border-box;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solic lime;
+	color: #000;
+	padding: 15px 0 10px;
+	outline: none;
+	font-family: inherit;
 }
