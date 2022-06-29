@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
+/* ТЕЛО САЙТА */
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
@@ -9,27 +10,73 @@ body {
 	background: #d8cccc;
 }
 
+/* ОБЩИЙ КОНТЕЙНЕР */
 .container {
-	margin: auto;
+	margin: 20px auto;
 	max-width: 800px;
 }
 
-#avatar {
-	height: 200px;
-	border-radius: 20px;
-	box-shadow: 4px 4px 14px 1px rgba(0, 0, 0, 0.25);
-}
-
+/* ШАПКА */
 .header {
-	border: 1px solid black;
 	display: flex;
 }
 
-.box {
-	border: 1px solid grey;
-	display: block;
-	box-sizing: border-box;
+/* КАРТОЧКА */
+.card {
+	background: #eee;
+	padding: 10px 20px;
+	margin-bottom: 15px;
+	border-radius: 10px;
 }
+
+/* ДВЕ КОРОБКИ В ШАПКЕ */
+.box {
+	padding: 10px;
+}
+
+/* АВАТАР */
+img {
+	height: 200px;
+	border-radius: 10px;
+	box-shadow: 4px 4px 14px 1px rgba(0, 0, 0, 0.25);
+}
+
+/* ПЕРСОНАЛЬНАЯ ИНФОРМАЦИЯ */
+.social {
+	margin-left: 10px;
+}
+
+/* Имя */
+h1 {
+	font-size: 2rem;
+	margin-top: 0;
+}
+
+/* Соцсети */
+.social a {
+	background: #B0C4DE;
+	text-decoration: none;
+	padding: 5px;
+	border-radius: 10px;
+	display: flex;
+}
+
+a {
+	color: #444;
+	transition: all .5s;
+}
+
+a:hover {
+	background: #B0C4DE;
+	color: cornsilk;
+	font-size: 2rem;
+}
+
+a:active {
+	color: darkblue;
+}
+
+
 
 
 .html p {
@@ -76,46 +123,13 @@ body {
 	background: #F0FFFF;
 }
 
-.card {
-	background: #eee;
-	padding: 10px 20px;
-	margin-bottom: 15px;
-	border-radius: 10px;
-}
+
 
 .bio {
 	background-color: cornsilk;
 }
 
-.social {
-	padding-bottom: 40px;
-}
 
-.social a {
-	background: #B0C4DE;
-	text-decoration: none;
-	padding: 10px;
-	border-radius: 10px;
-}
-
-a {
-	color: #444;
-	transition: all .5s;
-}
-
-a:hover {
-	background: #eee;
-	color: orange;
-	font-size: 2rem;
-}
-
-a:visited {
-	color: darkred;
-}
-
-a:active {
-	color: blue;
-}
 
 .btn {
 	background: #242;
@@ -150,7 +164,7 @@ a:active {
 .form-group label {
 	display: block;
 	font-size: 14px;
-	color: red;
+	color: darkred;
 }
 
 .form-group input,
@@ -164,4 +178,23 @@ a:active {
 	padding: 15px 0 10px;
 	outline: none;
 	font-family: inherit;
+}
+
+@media (max-width: 600px) {
+
+	.header {
+		display: block;
+		text-align: center;
+	}
+
+	.form-row {
+		display: block;
+	}
+
+	.form-row .form-group {
+		margin-right: 0;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+
 }
